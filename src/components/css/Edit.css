@@ -1,0 +1,23 @@
+.modifySelection {
+    background: #ececec;
+    height: auto;
+    width: 40vw;
+    padding: 2vw;
+    cursor: pointer;
+  }
+  
+  .modifySelection:hover {
+    background: #459de2;
+    color: white;
+  }
+
+  .changeLabelInstructions {
+    font-size: 100%;
+    font-weight: 500;
+    margin-left: 2px;
+  }
+
+  .editsFrame {
+    width: 50%;
+    margin-left: 28vw;
+  }

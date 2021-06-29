@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.errorContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.errorContainer h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 108px;
+  color: #076df2;
+  margin-bottom: 30px;
+}
+
+.errorContainer p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+p.error404 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4b4b4b;
+}
+
+.errorButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.errorButton {
+  cursor: pointer;
+  margin: 10px;
+  height: auto;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: #fafafa;
+  padding-inline: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #076df2;
+  border: solid 2px #076df2;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+}

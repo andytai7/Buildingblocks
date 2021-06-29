@@ -1,78 +1,121 @@
 .dashboard-info {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  height: 300px;
+  width: 500px;
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 5px 2px #d4d4d4;
-  padding-bottom: 20px;
+
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.editProfile {
-  padding-right: 8px;
-  color: white;
-  font-weight: 500;
-  font-size: 100%;
-  float: right;
-  margin-right: 35px;
-  margin-top: 35px;
-  width: 63px;
-  height: 29px;
-  left: 548px;
-  top: 543px;
-  background: #e9a800;
-  border: 0;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+.info-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  margin-top: 6px;
+}
+
+.info-header img {
+  width: 87px;
+  height: 85px;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.username-email {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.email {
+  font-size: 12px;
+}
+
+.info-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 2px;
+  margin-left: 20px;
+  padding: 10px;
+  height: 50%;
+  font-size: 14px;
+  /* overflow-y: scroll; */
+}
+
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding: 2px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}
+.edit-profile button {
+  width: auto;
+  font-size: 14px;
+  line-height: 18px;
+
+  font-family: "Poppins", sans-serif;
+  color: #1970e1;
+  background-color: transparent;
+  border: none;
+  padding: 7px;
+}
+
+.edit-profile button:hover {
+  background-color: #eeeeee;
   border-radius: 4px;
-  text-align: right;
-  cursor: pointer;
 }
 
-.editProfile:hover {
-  background: #e9b00d;
+@media screen and (max-width: 800px) {
+  .dashboard-info {
+    width: 250px;
+    height: 140px;
+  }
 }
 
-.editProfile:focus {
-  outline: 0;
-}
 
-.editImage {
-  float: left;
-  margin-top: 4px;
-  margin-left: 3px;
+
+
+
+
+/* still need to work on this styling */
+.popup {
+  z-index: 2;
+  background-color: rgba(252, 252, 252, 0.98) !important;
+  max-height: 80%;
+  max-width: 75%;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.06);
+  margin-right: 2% !important;
 }
 
 .popup {
-    z-index: 2;
-    background-color:rgba(252, 252, 252, 0.98)!important;
-    max-height: 80%;
-    max-width: 75%;
-    color: black;
-    border-radius: 12px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.06);
-    margin-right: 2%!important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-.popup {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .popup_inner {
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
-    margin: auto;
-    border-radius: 20px;
-    background: white;
-  }
-  
 
 .edit-avi {
   background: #fff;
@@ -95,28 +138,4 @@
 .edit-avi:focus {
   outline-color: #e9a800;
   outline-width: 1px;
-}
-
-.img {
-  height: 203px;
-  width: 203px;
-  margin-left: 10px;
-  margin-top: 5%;
-  margin-bottom: 0;
-}
-
-.profile-info-table {
-  margin-left: 25px;
-}
-
-.profile-field {
-  font-size: 80%;
-  font-weight: 500;
-  padding: 10px;
-}
-
-.profile-field-entry {
-  font-size: 80%;
-  font-weight: 300;
-  padding: 10px;
 }

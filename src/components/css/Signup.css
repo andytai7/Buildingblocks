@@ -11,7 +11,7 @@
 
 .rectangleSignUp {
     flex: 1;
-    background: #E9A800;
+    background: #1970E1;
 }
 
 .rectangleRightSignUp {
@@ -21,19 +21,19 @@
 
 .rectangleChoiceRightSignUp {
     flex: 1;
-    background: #E9A800;
+    background: #1970E1;
 }
 
 .niceToMeetYou {
     position: absolute;
     left: 0%;
-    top: 25%;
+    top: 20%;
     width: 50%;
     text-align: center;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 10vw;
+    font-size: 3.5vw;
     line-height: 130%;
     color: #FFFFFF;
 }
@@ -58,7 +58,7 @@
     height: 4.5vw;
     right: 10%;
     top: 25%;
-    border: 3px solid #E9A800;
+    border: 3px solid #1970E1;
     border-radius: 50px;
 }
 
@@ -70,7 +70,7 @@
     right: 10%;
     top: 38%;
 
-    border: 3px solid #E9A800;
+    border: 3px solid #1970E1;
     border-radius: 50px;
 }
 
@@ -82,7 +82,7 @@
     right: 10%;
     top: 64%;
 
-    border: 3px solid #E9A800;
+    border: 3px solid #1970E1;
     border-radius: 50px;
 
 }
@@ -90,33 +90,32 @@
 .signUpWithGoogle {
 
     position: fixed;
-    width: 167px;
+    width: 100%;
     height: 26px;
     left: 66%;
     top: 28%;
 
-
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5vw;
     line-height: 130%;
-    color: #E9A800;
+    color: #000000;
 }
 
 
 .signUpWithFacebook {
     position: fixed;
-    width: 191px;
+    width: 100%;
     height: 26px;
     left: 66%;
     top: 41%;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5vw;
     line-height: 130%;
-    color: #E9A800;
+    color: #000000;
 }
 
 
@@ -124,12 +123,12 @@
     position: fixed;
     width: 45vw;
     height: 31px;
-    left: 66%;
-    top: 85%;
-    font-family: Roboto;
+    left: 69.5%;
+    top: 90%;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 130%;
     color: #000000;
 }
@@ -137,31 +136,22 @@
 
 .signUpWithEmail {
     position: absolute;
-    width: 161px;
+    width: 100%;
     height: 26px;
     left: 66%;
     top: 67%;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5vw;
     line-height: 130%;
-    color: #E9A800;
-}
-
-.or {
-    position: fixed;
-    width: 17px;
-    height: 21px;
-    left: 66%;
-    top: 55%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5vw;
-    line-height: 21px;
     color: #000000;
 }
+
+
+
+
+
 
 
 .facebookCircle_512 {
@@ -206,6 +196,152 @@
 
 .sign-in-button {
     font-weight: bold;
-    color: #E9A800;
+    font-size: 1.5vw;
+    color: #1970E1;
 }
+
+.signupPicture {
+    position: absolute;
+    width: 25%;
+    left: 13%;
+    top: 40%; 
+}
+
+.customButton {
+    width: 50%;
+    border: 3px solid #1970E1;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: left;
+    padding: 30px;
+    margin: 5% auto;
+    color: #000000;
+}
+
+.customGoogleButton {
+    display: block;
+    width: 100%;
+    border: 3px solid #1970E1;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: left;
+    padding: 25px;
+    margin: 5% 50%;
+    background-color: #FFFFFF;
     
+}
+
+
+.buttonIcons {
+    float: right;
+    width: 9%;
+}
+
+.vertical-center {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* New */
+
+#leftSide {
+    display: inline-block;
+    width: 50%;
+    height: 95vh;
+    background-color: #1970E1;
+}
+#rightSide {
+    display: inline-grid;
+    width: 50%;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+.welcomeText {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5vw;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.signupImg {
+    width: 60%;
+    display: block;
+    margin: 5% auto;
+}
+
+.alreadyHaveAnAccountText {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1vw;
+    color: #000000;
+}
+
+.orText {
+    border: none;
+}
+
+
+@media (max-width:700px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #leftSide {
+        width: 100%;
+        height: 80vh;
+    }
+    #rightSide {
+        display: block;
+        width: 100%;
+        
+    }
+
+    .welcomeText {
+        font-size: 7vw;
+    }
+
+    .buttonIcons {
+        float: right;
+        width: 10%;
+    }
+
+    .customButton {
+        width: 75%;
+        font-size: 4.5vw;
+        padding: 30px;
+        
+    }
+    
+    .customGoogleButton {
+        width:300%;
+        font-size: 4.5vw;
+        padding: 25px;
+        margin: 20% 50%;
+        
+    }
+
+    .vertical-center {
+        width: 25%;
+        
+    }
+
+    .alreadyHaveAnAccountText {
+        font-size: 3.5vw;
+        padding: 5% 0px 5% 0px;
+    }
+
+    .sign-in-button {
+        font-size: 4.5vw;
+        padding: 5% 0px 5% 0px;
+    }
+}

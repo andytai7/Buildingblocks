@@ -25,4 +25,11 @@
 
   .heading {
       margin-right: 25%;
+      
+      padding-bottom: 15px;
+      text-align: center;
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 24px;
+      color: #000000;
   }

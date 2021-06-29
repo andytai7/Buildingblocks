@@ -1,0 +1,10 @@
+.dashboard-header-edit {
+    margin-top: -109px;
+    z-index: 0;
+    background: #fff;
+    height: 65px;
+    border-bottom: 1px solid #e2e5e6;
+    margin-bottom: 20vh;
+    position: fixed;
+    width: 100%;
+  }

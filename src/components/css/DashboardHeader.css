@@ -1,61 +1,178 @@
-.dashboard-header {
+/*.dashboard-header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
   background: #fff;
   height: 65px;
   width: 100%;
+
   border: 1px solid #e2e5e6;
-  justify-content: space-between;
 }
 
 .leftSection {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+  z-index: 2;
 }
 
 .minlogo {
-  height: 40px;
-  width: 40px;
-  padding: 2px;
-  margin-left: 10px;
-  margin-right: 2px;
+  height: 30px;
+  width: 30px;
 }
 
 .buildingBlocks {
-  font-size: 16px;
+  font-size: 18px;
   color: #4b4b4b;
-  margin: 5px;
+  padding: 5px;
 }
 
 .rightSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 2%;
+  padding: 2px;
+  z-index: 10;
 }
 
-.dashboard-header-edit {
-  margin-top: -109px;
-  z-index: 0;
-  background: #fff;
-  height: 65px;
-  border-bottom: 1px solid #e2e5e6;
-  margin-bottom: 20vh;
-  position: fixed;
-  width: 100%;
+.rightSection button {
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  background-color: rgb(230, 230, 230);
+}
+
+.rightSection button:hover {
+  border: 3px solid #afaeae;
+  border-radius: 50px;
+  transition: 300ms;
+}
+
+.rightSection.active button {
+  border: 3px solid  #868686;
+  border-radius: 50px;
+  background-color: rgb(230, 230, 230);
 }
 
 .header-avi {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  padding: 2px;
+  height: 47px;
+  width: 47px;
+  padding: 4px;
+  border-radius: 50px;
 }
 
-.header-avi:hover {
-  height: 51px;
-  width: 51px;
-  cursor: pointer;
+.dropDown {
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  right: 2%;
+  width: 150px;
+  height: 64px;
+
+  transition: 100ms;
+  z-index: 0;
 }
+
+.dropDown.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  position: fixed;
+  top: 65px;
+  right: 2%;
+
+  height: 150px;
+  width: 150px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #a0a0a0;
+
+  transition: 200ms;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dropDown button {
+  display: none;
+}
+
+.dropDown text {
+  display: none;
+}
+
+.drop-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 6px;
+}
+
+.dropDown.active text {
+  display: flex;
+  visibility: visible;
+  text-align: center;
+  padding: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+.dropDown.active button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: visible;
+  width: 80%;
+  border: 1px solid transparent;
+  background-color: #e2e5e6;
+  margin: 5px;
+  padding:10px;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropDown.active button:hover {
+  background-color: #626262;
+  color: #fff;
+  transition: 100ms;
+}
+
+
+@media screen and (min-width: 700px) {
+  .dropDown {
+    background-color: #fff;
+    position: fixed;
+    top: 65px;
+    right: 2%;
+    width: 200px;
+    height: 0px;
+  
+    transition: 200ms;
+    z-index: 0;
+  }
+  
+  .dropDown.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: #fff;
+    position: fixed;
+    top: 65px;
+    right: 2%;
+  
+    height: 150px;
+    width: 200px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid #fff;
+  
+    transition: 200ms;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.06);
+  }
+}
+
+ */

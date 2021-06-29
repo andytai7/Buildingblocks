@@ -25,7 +25,7 @@
 
 .rectangleChoiceRight {
     flex: 1;
-    background: #E9A800;
+    background: #1970E1;
 }
 
 .welcomeBackEmail {
@@ -86,7 +86,21 @@
     width: 26vw;
     height: 0px;
     right: 10%;
-    top: 47%;
+    top: 39%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #8D8D8D;
+}
+
+.confirmPasswordInput {
+    position: fixed;
+    width: 26vw;
+    height: 0px;
+    right: 10%;
+    top: 51%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -99,18 +113,15 @@
     outline: none;
 }
 
-.emailInput {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 35%;
-    font-family: Roboto;
+.allInput {
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 130%;
     color: #8D8D8D;
+    width: 50%;
+    margin: 5% 25%;
 }
 
 .emailInput:focus {
@@ -118,12 +129,8 @@
 }
 
 .nickInput {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 24%;
-    font-family: Roboto;
+    
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -153,64 +160,46 @@
 
 
 input {
-    border: none;
+    border: 1px solid #B7B7B7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3%;
     background: transparent;
     font-size: 2vw;
     color: black;
 }
 
-.passwordLine {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 51%;
-    border: 1px solid #000000;
-    transform: rotate(0.19deg);
-}
 
 .sign-up-button {
     font-weight: bold;
     color: #4200AD;
 }
 
-.nickLine {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 28%;
-    border: 1px solid #000000;
-    transform: rotate(0.19deg);
-}
-
-
-.studentIdLine {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 64%;
-    border: 1px solid #000000;
-    transform: rotate(0.19deg);
-}
 
 
 .signupButton {
-    position: absolute;
-    width: 10vw;
-    height: 38px;
-    right: 10%;
-    top: 67%;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8vw;
+    font-size: 1vw;
     color: white;
     text-align: center;
-    line-height: 140%;
-    background: #E9A800;
+    line-height: 10%;
+    background: #1970E1;
     border-radius: 50px;
+    border-color: #1970E1;
+    padding: 20px;
+    transition: background-color 0.25s ease-out;
+    margin: 3% 0;
+    width: 20%;
+    position: relative;
+    left: 40%;
+}
+
+.signupButton:hover {
+    background-color: #FFFFFF;
+    color: #1970E1;
 }
 
 .landingHeader-login {
@@ -245,4 +234,69 @@ input {
     font-size:110% !important;
     margin-left:20px;
     margin-top:20px;
+}
+
+label {
+    padding: 1%;
+    color: #4B4B4B;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.mentorButton {
+    color: #076DF2;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    border: 2px solid #076DF2;
+    box-sizing: border-box;
+    border-radius: 50px 0px 0px 50px;
+    transition: background-color 0.25s ease-out;
+    width: 25%;
+    display: inline-block;
+    left: 25%;
+    position: relative;
+}
+
+.menteeButton {
+    color: #076DF2;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    border: 2px solid #076DF2;
+    box-sizing: border-box;
+    border-radius: 0px 50px 50px 0px;
+    transition: background-color 0.25s ease-out;
+    width: 25%;
+    display: inline-block;
+    left: 25%;
+    position: relative;
+}
+
+.mentorMenteeText {
+    text-align: center;
+    font-size: 1.1vw;
+    margin: 3%;
+}
+
+.mentorButton:hover {
+    background-color: #076DF2;
+    color: #FFFFFF;
+}
+
+.menteeButton:hover {
+    background-color: #076DF2;
+    color: #FFFFFF;
+}
+
+@media (max-width:700px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .signupButton {
+        font-size: 2.5vh;
+    }
+
+    .mentorMenteeText {
+        font-size: 2.5vh;
+    }
+    
 }

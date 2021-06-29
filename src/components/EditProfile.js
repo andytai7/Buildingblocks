@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./css/Dashboard.css";
+import "./css/EditProfile.css";
 import axios from "axios";
 import DashboardHeaderEdit from "./DashboardHeaderEdit";
 import { useSelector, useDispatch } from "react-redux";
