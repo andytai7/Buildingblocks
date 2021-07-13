@@ -23,11 +23,11 @@ function DashboardNavbar(props) {
 
 
                     <div className="dashboard-navbar-extras">
-                        <div className="dashboard-navbar-logo-container">
+                        <div className="navbar-logo-container">
                             <Link to="/">
                                 <picture style={{maxWidth: "100%"}}>
                                     <source media="(min-width: 1100px)" srcset={logo}/>
-                                    <img src={logo_small} alt="Logo"/>
+                                    <img style={{paddingTop: "15px"}} src={logo_small} alt="Logo"/>
                                 </picture>
                             </Link>
                         </div>

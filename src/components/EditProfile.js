@@ -49,8 +49,6 @@ export default function EditProfile() {
   }
   return (
     <div>
-      <DashboardHeaderEdit />
-      
       <div className="avatars">
         <div className="editsFrame">
           <p className="changeLabelInstructions">

@@ -14,7 +14,7 @@ exports.authenticateToken = function(req, res, next) {
     let newAccessToken;
     let currentUser = user;
     if (err){
-      // TODO -> Finalize whether refreshtoken needs to be verified 
+      // TODO -> Finalize whether refreshtoken needs to be verified
       if (refreshTokensGlobal.find(token => token === refreshToken)) {
         jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
           if (err) {

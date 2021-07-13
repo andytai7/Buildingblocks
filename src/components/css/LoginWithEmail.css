@@ -1,4 +1,4 @@
-.loginWithEmail {
+/*.loginWithEmail {
     position: fixed;
     right: 0;
     left: 0;
@@ -11,33 +11,35 @@
     background: #FFFFFF;
 }
 
-.login-content{
+.login-content-email{
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 89vh;
+    top: 120px;
+    overflow: hidden;
 }
 
-.welcome-back{
+.welcome-back-email{
     flex: 1;
     background-color: #1970E1;
-    
-    
 
-    
 }
 
-.welcome-back-content{
+.welcome-back-content-email{
     position: fixed;
     width: 50%;
-    top: 10vh;
+    top: 120px;;
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.welcome-text{
+
+
+.welcome-text-email{
     font-size: 4vw;
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -100,7 +102,7 @@
     
     box-sizing: border-box;
     border: 0.1vw solid #B7B7B7;
-    border-radius: 0.5vw;
+    border-radius: 5px;
 }
 .input-line {
     width: 26vw;
@@ -154,23 +156,6 @@
     
 }
 
-
-
-.welcomeBackEmail {
-    position: absolute;
-    
-    width: 50%;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10vw;
-    line-height: 130%;
-    color: #FFFFFF;
-}
-
-
-
 .no-account-email{
     padding-top: 10vh;
     font-family: Roboto, sans-serif;
@@ -178,7 +163,6 @@
     font-weight: normal;
     font-size: 1.5vw;
     line-height: 130%;
-    /* or 23px */
     color: #000000;
 }
 
@@ -186,95 +170,193 @@
     font-weight: bold;
     font-size: 1.7vw;
     text-decoration: white;
-    color: #1970E1!important;
+    color: #1970E1 !important;
 }
 
-.ellipse {
+@media screen and (max-width: 1100px) {
 
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    left: 1195px;
-    top: 331px;
 
-    background: #FFFFFF;
+    .login-content-email{
+        height: 95vh;
+        top: 80px
+    }
+
 
 }
 
+@media screen and (max-width: 800px) {
 
-.passwordInput {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 45%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    color: #8D8D8D;
+    .login-content-email {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        height: 90vh
+    }
+
+    .welcome-back-email {
+        flex: 3;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .welcome-back-content-email {
+        position: relative;
+        top:0;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-text-email {
+        margin-top: 20px;
+        font-size: 8vw;
+        font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: left;
+        color: #1970E1;
+        padding-bottom: 2vh;
+
+    }
+
+    .input-container {
+        display: flex;
+        flex: 5;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email-login-input {
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-input-form {
+        position: relative;
+        top: -10%;
+        height: 100%;
+        width: 70vw;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 3.5vw;
+        line-height: 150%;
+        color: black;
+        padding-top: 4vh;
+
+    }
+
+    .email-input-box {
+
+        width: 100%;
+        height: 7vw;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vw;
+        line-height: 130%;
+        color: black;
+
+        box-sizing: border-box;
+        border: 0.1vw solid #B7B7B7;
+        border-radius: 5px;
+    }
+
+    .input-line {
+        width: 26vw;
+        height: 0px;
+        right: 10%;
+        top: 25%;
+        border: 0.5vw solid #B7B7B7;
+        transform: rotate(0.19deg);
+    }
+
+    .forgot-password {
+        width: 100%;
+        padding: 2vh 0 4vh 0;
+        text-align: right;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4vw;
+        line-height: 130%;
+        color: #000000;
+        cursor: pointer;
+    }
+
+    .forgot-password:hover {
+        color: #1970E1;
+        transition: ease-in 0.3s;
+    }
+
+    .login-button {
+        width: 20vw;
+        height: 8vw;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.5vw;
+        color: white;
+        text-align: center;
+        line-height: 140%;
+        background: #1970E1;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .login-button:hover {
+        cursor: pointer;
+        background: white;
+        color: #1970E1;
+        border: 0.2vw solid #1970E1;
+        border-radius: 50px;
+        transition: ease-in all 0.3s;
+
+    }
+
+    .no-account-email {
+        padding-top: 0;
+        bottom: -10%;
+        position: relative;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        line-height: 130%;
+        color: #000000;
+    }
+
+    .sign-up-button {
+        font-weight: bold;
+        font-size: 3.5vw;
+        text-decoration: white;
+        color: #1970E1 !important;
+    }
 }
-
-.passwordInputForm:focus {
-    outline:none;
-}
-
-
-
-.emailInputForm:focus {
-    outline:none;
-}
-
-input {
-    border: none;
-    background: transparent;
-    font-size: 2vw;
-    color: black;
-}
-
-.passwordLine {
-    position: fixed;
-    width: 26vw;
-    height: 0px;
-    right: 10%;
-    top: 50%;
-    border: 1px solid #000000;
-    transform: rotate(0.19deg);
-}
-
-
-
-.landingHeader-login {
-    position: fixed;
-    width: 100%;
-    height: 55px;
-    background: white;
-    margin: auto;
-    vertical-align: middle;
-    box-shadow: 0px -1px 5px #888888;
-}
-
-.rectangle a {
-    font-size:80%;
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    vertical-align: middle;
-    margin-top:20px;
-    margin-right:20px;
-    padding-right:30px;
-    float:left;
-}
-
-.rectangle a:hover {
-    color:#F5E7E7;
-}
-
-.App-name-login {
-    float:left;
-    font-weight: 500;
-    font-size:110% !important;
-    margin-left:20px;
-    margin-top:20px;
-}
+*/

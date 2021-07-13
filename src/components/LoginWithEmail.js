@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import "./css/LoginWithEmail.css";
+import "./css/Login.css";
 import axios from "axios";
+
 import { Link, Redirect } from "react-router-dom";
-import { useAlert } from "react-alert";
 import { useDispatch } from "react-redux";
-import Login from "./Login";
 import { useSelector } from "react-redux";
-import Navbar from "./Navbar";
-import login_graphic from "../images/login_graphic.png"
+
 import Cookies from 'universal-cookie';
+
+
+import login_graphic from "../images/login_graphic.svg";
+import login_mobile from "../images/login_mobile.svg";
 
 export default function LoginWithEmail() {
   const dispatch = useDispatch();
@@ -32,12 +34,13 @@ export default function LoginWithEmail() {
     setEmail("");
     setPassword("");
 
-  
+
     instance
-      .post("http://localhost:5000/users/login", userCredentials)
+      .post("http://localhost:5000/users/login", userCredentials, { withCredentials: true })
       .then((res) => {
         if (res.data === "invalid password") {
           // useAlert("Sorry can you please check your credentials and try again?");
+          console.log(res);
         } else {
           console.log(res.data.token);
           dispatch({
@@ -64,29 +67,32 @@ export default function LoginWithEmail() {
   }
   return !isLoggedIn ? (
 
-    
+
 
       <div className="login-content">
 
-      
-      
-        
+
+
+
       <div className="welcome-back">
         <div className="welcome-back-content">
         <p className="welcome-text">Welcome Back
         </p>
-        <img src={login_graphic} alt="login_graphic" width="60%" />
+          <picture style={{Width: "60%", alignItems: "center"}}>
+            <source style={{width: "100%"}} media="(min-width: 950px)" srcSet={login_graphic}/>
+            <img style={{width: "100%"}} src={login_mobile} alt="Logo"/>
+          </picture>
       </div>
       </div>
-      
-      <div className="input-container">
-        <div className="email-login-input">
 
-        
+      <div className="login-wrapper">
+        <div className="login-container">
+
+
         <form  onSubmit={onSubmit}>
           <div className="email-input-form">
-            <div className="input-field">
-              <label>Email
+            <div className="email-input-field">
+              <label>Email</label>
               <input
                 className="email-input-box"
                 type="email"
@@ -95,11 +101,11 @@ export default function LoginWithEmail() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              </label>
+
             </div>
 
-            <div className="input-field">
-              <label>Password
+            <div className="email-input-field">
+              <label>Password</label>
               <input
                 className="email-input-box"
                 type="password"
@@ -108,13 +114,13 @@ export default function LoginWithEmail() {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
-              </label>
-            </div>      
+
+            </div>
             <span to="/login" className="forgot-password">Forgot your password ?</span>
             <input type="submit" className="login-button" value="Log in" />
           </div>
         </form>
-        <div className="no-account-email">
+        <div className="no-account">
           Don't have an account?{" "}
           <a href="./signup">
             <Link to="/signup" className="sign-up-button">Sign Up</Link>
@@ -132,3 +138,4 @@ export default function LoginWithEmail() {
     />
   );
 }
+

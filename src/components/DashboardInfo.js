@@ -12,21 +12,19 @@ import edit from "../images/edit.png";
 import { Popup } from "semantic-ui-react";
 
 export default function DashboardInfo() {
-    const [editProfile, setEditProfile] = useState(false);
-    const avi = useSelector(state => state.avi);
-    const username = useSelector(state => state.username);
-    const email = useSelector(state => state.email);
-    const bio = useSelector(state => state.bio);
+  const [editProfile, setEditProfile] = useState(false);
+  const avi = useSelector((state) => state.avi);
+  const username = useSelector((state) => state.username);
+  const email = useSelector((state) => state.email);
+  const bio = useSelector((state) => state.bio);
 
-    function _chooseAvi(){
-        document.body.style.overflow = 'hidden';
-    };
+  function _chooseAvi() {
+    document.body.style.overflow = "hidden";
+  }
 
-    function _editProfile(){
-        this.setState({
-            editProfile: true,
-        });
-    };
+  function _editProfile() {
+    setEditProfile(true);
+  }
 
   return !editProfile ? (
     <div className="dashboard-info">
